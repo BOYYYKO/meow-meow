@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Acme:regular);
+
+/* GENERAL START */
+body{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    background-color:#F5F5F5;
+    margin: 0;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    color: #383838;
+}
+
+.container {
+    margin: 0px 50px;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+/* GENERAL END */
+
+/* HEADER START */
+.header-content {
+    align-self: center;
+    height: 93px;
+}
+
+.header-content > a {
+    align-self: center;
+}
+
+.header-content > ul {
+    list-style-type: none;
+    width: 470px;
+    color: #000000;
+    margin: 0px 15px;
+}
+
+.header-content > ul > li {
+    align-self: center;
+}
+
+.header-content > ul > li > a {
+    text-decoration: none;
+    position: relative;
+}
+
+.header-content > ul > li > a > img{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 8px;
+}
+/* HEADER END */
