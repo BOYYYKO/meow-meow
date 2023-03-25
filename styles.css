@@ -30,23 +30,32 @@ header {
 
 /* HEADER START */
 .header-content {
+    display: flex;
     align-self: center;
     height: 93px;
 }
 
 .header-content > a {
+    width: 33%;
     align-self: center;
 }
 
 .header-content > ul {
+    display: flex;
+    justify-content: center;
+    width: 66%;
     list-style-type: none;
-    width: 470px;
     color: #000000;
     margin: 0px 15px;
+}
+.cart {
+    display: flex;
+    justify-content: end;
 }
 
 .header-content > ul > li {
     align-self: center;
+    margin: 0px 25px;
 }
 
 .header-content > ul > li > a {
@@ -54,10 +63,36 @@ header {
     position: relative;
 }
 
-.header-content > ul > li > a > img{
+.header-content > ul > li > a > img {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     margin-left: 8px;
 }
 /* HEADER END */
+
+/* PROMO START */
+.promo {
+    background-color: #1EA8DD;
+}
+.promo-content {
+    display: flex;
+    height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.promo-content > h5 {
+    width: 33%;
+    display:inline;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    align-self: center;
+    margin: 0px 10px;
+}
+
+.promo-content > h5 > img{
+    margin-left: 10px;
+}
+/* PROMO END */
