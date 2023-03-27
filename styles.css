@@ -63,11 +63,17 @@ header {
 .header-content>.header-item>ul>li {
     align-self: center;
     margin: 0px 25px;
+    transition: 0.3s;
 }
 
 .header-content>.header-item>ul>li>a {
+    color: #383838;
     text-decoration: none;
     position: relative;
+}
+
+.header-content>.header-item>ul>li:hover{
+    transform: scale(1.1);
 }
 
 .header-content>.header-item>ul>li>a>img {
@@ -81,6 +87,11 @@ header {
     width: 18px;
     height: 18px;
     margin-left: 25px;
+    transition: 0.3s;
+}
+
+.right>a>img:hover{
+    transform: scale(1.2);
 }
 
 /* HEADER END */
@@ -152,7 +163,6 @@ a>.button{
     color: #FFFFFF;
     padding: 15px 70px;
     width: 94px;
-    margin-top: 50px;
     background: #E9292F;
     border-radius: 28px;
     font-family: 'Karla';
@@ -160,6 +170,16 @@ a>.button{
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    transition: .3s;
+}
+
+.banner-content > a > .button{
+    margin-top: 50px;
+}
+
+.button:hover{
+    background: #ce3338;
+    transform: scale(1.05);
 }
 /* BANNER END */
 
@@ -230,7 +250,11 @@ h3 {
     margin: 0;
 }
 
-.description > p {
+.description > a {
+    color: #383838;
+}
+
+.description > a > p {
     font-family: 'Karla';
     font-style: normal;
     font-weight: 400;
@@ -240,12 +264,12 @@ h3 {
     margin-bottom:32px;
 }
 
-.description > a > .button {
+.description > .label > a > .button {
     padding: 15px 50px;
     width: 84px;
     font-size: 16px;
     line-height: 19px;
-    margin: 0;
+    margin-top: 0;
     text-align: center;
 }
 /* CATEGORIES END */
@@ -259,6 +283,11 @@ h3 {
 .arrows > img {
     width: 60px;
     height: 60px;
+    transition: 0.3s;
+}
+
+.arrows > img:hover {
+    transform: scale(1.2);
 }
 
 .popular{
@@ -281,6 +310,18 @@ h3 {
     padding-top: 80px;
 }
 
+.photo{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.photo > a > img {
+    transition: transform 0.25s;
+}
+.photo > a:hover img {
+    transform: scale(1.1);
+}
+
 h4 {
     font-family: 'Acme';
     font-style: normal;
@@ -290,8 +331,8 @@ h4 {
     margin: 0;
 }
 
-.description > .label > a > .button{
-    margin: 0;
+.description > .label > a{
+    color: #383838;
 }
 
 .popular-content > .content {
@@ -303,7 +344,7 @@ h4 {
     width: 547px;
 }
 
-.item > .description > p{
+.item > .description > a > p{
     width: 274px;
     margin: 0;
     margin-top: 2px;
