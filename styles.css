@@ -2,11 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Acme:regular);
 
 /* GENERAL START */
-body{
+body {
     width: 100%;
     max-width: 1440px;
     min-width: 320px;
-    background-color:#F5F5F5;
+    background-color: #FFFFFF;
     margin: 0;
     font-family: 'Karla';
     font-style: normal;
@@ -22,10 +22,11 @@ header {
     background-color: #FFFFFF;
 }
 
-.flex-between{
+.flex-between {
     display: flex;
     justify-content: space-between;
 }
+
 /* GENERAL END */
 
 /* HEADER START */
@@ -35,12 +36,12 @@ header {
     height: 93px;
 }
 
-.header-content > a {
+.header-content>.header-item {
     width: 33%;
     align-self: center;
 }
 
-.header-content > ul {
+.header-content>.header-item>ul {
     display: flex;
     justify-content: center;
     width: 66%;
@@ -48,33 +49,47 @@ header {
     color: #000000;
     margin: 0px 15px;
 }
+
+.right {
+    display: flex;
+    justify-content: end;
+}
+
 .cart {
     display: flex;
     justify-content: end;
 }
 
-.header-content > ul > li {
+.header-content>.header-item>ul>li {
     align-self: center;
     margin: 0px 25px;
 }
 
-.header-content > ul > li > a {
+.header-content>.header-item>ul>li>a {
     text-decoration: none;
     position: relative;
 }
 
-.header-content > ul > li > a > img {
+.header-content>.header-item>ul>li>a>img {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     margin-left: 8px;
 }
+
+.right>a>img {
+    width: 18px;
+    height: 18px;
+    margin-left: 25px;
+}
+
 /* HEADER END */
 
 /* PROMO START */
 .promo {
     background-color: #1EA8DD;
 }
+
 .promo-content {
     display: flex;
     height: 50px;
@@ -82,9 +97,9 @@ header {
     text-align: center;
 }
 
-.promo-content > h5 {
+.promo-content>h5 {
     width: 33%;
-    display:inline;
+    display: inline;
     align-items: center;
     font-size: 18px;
     font-weight: 700;
@@ -92,7 +107,77 @@ header {
     margin: 0px 10px;
 }
 
-.promo-content > h5 > img{
+.promo-content>h5>img {
     margin-left: 10px;
 }
+
 /* PROMO END */
+
+/* BANNER START */
+.banner {
+    background: url(assets/background.png);
+    width: 100%;
+    height: 600px;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.banner-content>h1 {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 101px;
+    margin: 0;
+    padding-top: 123px;
+}
+
+.banner-content>p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.banner-content>a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.banner-content>a>.button{
+    padding: 15px 70px;
+    width: 94px;
+    margin-top: 50px;
+    background: #E9292F;
+    border-radius: 28px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* BANNER END */
+
+/* COMPANIES START */
+.companies{
+    height: 189px;
+    background-color: #F5F5F5;
+}
+
+.companies-content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.companies-content>img{
+    height: 100%;
+    align-self: center;
+}
+/* COMPANIES END */
