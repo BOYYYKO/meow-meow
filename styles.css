@@ -124,7 +124,7 @@ header {
     color: #FFFFFF;
 }
 
-.banner-content>h1 {
+h1 {
     font-family: 'Acme';
     font-style: normal;
     font-weight: 400;
@@ -183,7 +183,7 @@ a>.button{
 /* COMPANIES END */
 
 /* CATEGORIES START */
-.categories-content>h1{
+h2{
     margin: 0;
     padding-top:32px;
     font-family: 'Acme';
@@ -206,7 +206,8 @@ a>.button{
     display: flex;
     justify-content: start;
 }
-.description{
+
+.category > .description{
     width: 341px;
     background-color: #F5F5F5;
     border-radius: 0px 15px 15px 0px;
@@ -214,7 +215,7 @@ a>.button{
     padding: 0px 32px;
 }
 
-.description > h3 {
+h3 {
     font-family: 'Acme';
     font-style: normal;
     font-weight: 400;
@@ -239,3 +240,63 @@ a>.button{
     margin-right: auto
 }
 /* CATEGORIES END */
+
+/* POPULAR START */
+.arrows{
+    width: 140px;
+    padding-top:32px;
+}
+
+.arrows > img {
+    width: 60px;
+    height: 60px;
+}
+
+.popular{
+    margin-bottom: 56px;
+}
+
+.popular-content{
+    margin-top: 48px;
+}
+
+.popular-content > .content { 
+    display: flex;
+}
+
+.content > .item {
+    margin-right: 20px;
+}
+
+.popular-content > h2 {
+    padding-top: 80px;
+}
+
+h4 {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0;
+}
+
+.description > .label > a > .button{
+    margin: 0;
+}
+
+.popular-content > .content {
+    padding-top: 73px;
+}
+
+.item > .description{
+    margin-top: 20px;
+    width: 547px;
+}
+
+.item > .description > p{
+    width: 274px;
+    margin: 0;
+    margin-top: 2px;
+}
+/* POPULAR END */
