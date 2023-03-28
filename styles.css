@@ -15,7 +15,7 @@ body {
 
 .container {
     margin: 0px 50px;
-    max-width: 1440px;
+    justify-content: center;
 }
 
 header {
@@ -493,6 +493,12 @@ h3 {
     cursor: pointer;
 }
 
+.content > .row{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 /* CATEGORIES END */
 
 /* POPULAR START */
@@ -579,6 +585,7 @@ h4 {
 }
 
 .item > .photo {
+    width: 547px;
     height: 547px;
     border-radius: 15px;
 }
@@ -602,6 +609,115 @@ h4 {
 /* SLIDER END */
 
 /* ADAPTIVE START */
+@media (min-width: 1920px) {
+    .dropbtn > li > a, .header-content>.header-item>ul>li>a{
+        font-size: 24px;
+    }
+
+    .dropbtn > li > a > img {
+        width: 18px;
+        height: 12px;
+        margin-left: 4px;
+        margin-top: 8px;
+    }
+
+    .right>a>img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .promo-content > h5 {
+        font-size: 24px;
+    }
+
+    .promo-content > h5 > img{
+        width: 140px;
+        height: 25px;
+        padding-top: 6px;
+    }
+
+    .banner{
+        height: 800px;
+    }
+
+    h1{
+        font-size: 120px;
+        width: 922px;
+    }
+
+    .banner-content > p {
+        font-size: 30px;
+        width: 700px;
+    }
+
+    a>.button {
+        width: 134px;
+        padding: 20px 90px;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    .content > .row {
+        gap:90px;
+    }
+
+    .change-photos > .photo , .change-photos>.photo>a>img {
+        height: 360px;
+        width: 360px;
+    }
+
+    .category>.description {
+        width: 360px;
+        height: 360px;
+    }
+
+    h3{
+        font-size: 45px;
+    }
+
+    .category>.description >a  > p{
+        font-size: 19px;
+    }
+
+    .arrows>img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .slider-next{
+        margin-left: 20px;
+    }
+
+    .item > .photo, .item > .photo > a > img {
+        width: 747px;
+        height: 747px;
+    }
+
+    .item>.description {
+        width: 747px;
+        margin-top: 20px;
+    }
+
+    h4{
+        font-size: 50px;
+        line-height: 49px;
+    }
+
+    .item>.description>a>p {
+        width: 474px;
+        font-size: 24px;
+    }
+
+    .description>.label>a>.button {
+        padding: 15px 50px;
+        width: 154px;
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 1400px) {
     .promo-content>h5 {
         font-size: 16px;
