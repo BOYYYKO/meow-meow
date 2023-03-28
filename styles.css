@@ -530,10 +530,11 @@ h3 {
 h2 {
     padding-top: 80px;
 }
-
-.photo {
+.photo{
     overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
+}
+.change-photos > .photo {
+    border-radius: 15px 0px 0px 15px;
 }
 
 .photo>a>img {
