@@ -7,13 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Meow</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/swiper/style.css">
+  <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
   <main>
     <header>
       <div class="header-content container">
-        <div class="header-item"><a href="/"><img src="assets/logo.png" alt=""></a></div>
+        <div class="header-item menu"><a href="/"><img src="assets/menu.png" alt=""></a></div>
+        <div class="header-item"><a href="/"><img src="assets/logo.png" class="logo" alt=""></a></div>
         <div class="header-item">
           <ul>
             <li><a href="/">DOGS <img src="assets/down-arrow.png" alt=""></a></li>
@@ -40,10 +43,10 @@
     </section>
     <section class="banner">
       <div class="banner-content container">
-        <h1>CHOOSE THE BEST</br>FOR THE BEST</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing</br>and typesetting industry</p>
+        <h1>CHOOSE THE BEST FOR THE BEST</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <a href="/">
-          <div class="button">SHOP NOW</div>
+          <div class="button"><p>SHOP NOW</p></div>
         </a>
       </div>
     </section>
@@ -55,13 +58,25 @@
         <img src="assets/company-4.png" alt="">
         <img src="assets/company-5.png" alt="">
       </div>
+      <div class="wrapper">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/company-1.png"></div>
+                <div class="swiper-slide"><img src="assets/company-2.png"></div>
+                <div class="swiper-slide"><img src="assets/company-3.png"></div>
+                <div class="swiper-slide"><img src="assets/company-4.png"></div>
+                <div class="swiper-slide"><img src="assets/company-5.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </section>
     <section class="categories">
       <div class="categories-content container">
         <h2>Shop By Category</h2>
         <div class="content">
           <div class="row flex-between">
-            <div class="category">
+            <div class="category left">
               <div class="change-photos">
                 <div class="photo change"><a href="/"><img src="assets/category-1.png" alt=""><a></div>
                 <div class="photo change"><a href="/"><img src="assets/category-1.2.png" alt=""><a></div>
@@ -79,7 +94,7 @@
                 </a>
               </div>
             </div>
-            <div class="category">
+            <div class="category right">
               <div class="change-photos">
                 <div class="photo change"><a href="/"><img src="assets/category-2.png" alt=""></a></div>
                 <div class="photo change"><a href="/"><img src="assets/category-2.2.png" alt=""><a></div>
@@ -99,7 +114,7 @@
             </div>
           </div>
           <div class="row flex-between">
-            <div class="category">
+            <div class="category left">
               <div class="change-photos">
                 <div class="photo change"><a href="/"><img src="assets/category-3.png" alt=""></a></div>
                 <div class="photo change"><a href="/"><img src="assets/category-3.2.png" alt=""><a></div>
@@ -117,7 +132,7 @@
                 </a>
               </div>
             </div>
-            <div class="category">
+            <div class="category right">
               <div class="change-photos">
                 <div class="photo change"><a href="/"><img src="assets/category-4.png" alt=""></a></div>
                 <div class="photo change"><a href="/"><img src="assets/category-4.2.png" alt=""><a></div>
@@ -157,11 +172,14 @@
                   <a href="/">
                     <h4>Bird Teaser Wand</h4>
                   </a>
+                  <a href="/" class="adaptive-description-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <a>
                   <a href="/">
                     <div class="button">SHOP NOW</div>
                   </a>
                 </div>
-                <a href="/">
+                <a href="/" class="description-text">
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><a>
               </div>
             </div>
@@ -171,11 +189,14 @@
                 <div class="label flex-between">
                   <a href="/">
                     <h4>Naughty Mouse</h4><a>
+                      <a href="/" class="adaptive-description-text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <a>
                       <a href="/">
                         <div class="button">SHOP NOW</div>
                       </a>
                 </div>
-                <a href="/">
+                <a href="/" class="description-text">
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><a>
               </div>
             </div>
@@ -185,12 +206,33 @@
                 <div class="label flex-between">
                   <a href="/">
                     <h4>Bird Teaser Wand</h4><a>
+                      <a href="/" class="adaptive-description-text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <a>
                       <a href="/">
                         <div class="button">SHOP NOW</div>
                       </a>
                 </div>
-                <a href="/">
+                <a href="/" class="description-text">
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="photo"><a href="/"><img src="assets/popular-2.png" alt=""></a></div>
+              <div class="description">
+                <div class="label flex-between">
+                  <a href="/">
+                    <h4>Naughty Mouse</h4><a>
+                    <a href="/" class="adaptive-description-text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a>
+                    <a href="/">
+                      <div class="button">SHOP NOW</div>
+                    </a>
+                </div>
+                <a href="/" class="description-text">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a>
               </div>
             </div>
           </div>
@@ -198,6 +240,8 @@
     </section>
   </main>
   <script src="scripts.js"></script>
+  <script src="/swiper/swiper-bundle.min.js"></script>
+  <script src="/swiper/index.js"></script>
 </body>
 
 </html>

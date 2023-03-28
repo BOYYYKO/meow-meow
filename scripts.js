@@ -1,3 +1,4 @@
+// SLIDER START
 const items = document.querySelectorAll('.slider .slider-line .item');
 const sliderLine = document.querySelector('.slider .slider-line');
 let count = 0;
@@ -36,3 +37,4 @@ document.querySelector('.slider-prev').addEventListener('click', function () {
 function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 }
+// SLIDER END
