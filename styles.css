@@ -870,7 +870,7 @@ h4 {
         border-radius: 15px 15px 0px 0px;
     }
 
-    .item>.photo>a>img {
+    .item>.photo>a>img, .item>.photo {
         width: 450px;
         height: 450px;
     }
