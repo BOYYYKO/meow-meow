@@ -882,6 +882,12 @@ h4 {
     .dropbtn > li > a {
         font-size: 10px;
     }
+
+    .dropbtn > li > a > img {
+        width: 8px;
+        height: 6px;
+        margin-top: 3px;
+    }
 }
 
 @media (max-width: 578px) {
