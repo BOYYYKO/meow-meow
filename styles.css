@@ -534,6 +534,7 @@ h2 {
     overflow: hidden;
 }
 .change-photos > .photo {
+    height: 319px;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -575,6 +576,11 @@ h4 {
 
 .adaptive-description-text{
     display: none;
+}
+
+.item > .photo {
+    height: 547px;
+    border-radius: 15px;
 }
 
 /* POPULAR END */
