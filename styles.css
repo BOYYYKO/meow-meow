@@ -29,6 +29,62 @@ header {
 
 /* GENERAL END */
 
+/* DROPDOWN LIST START */
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn > li > a{
+    display: flex;
+    font-size: 14px;
+} 
+
+.dropbtn > li > a > img {
+    width: 12px;
+    height: 10px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3f3f3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #383838;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c1c1c1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+/* DROPDOWN LIST END */
+
 /* BURGER MENU START */
 a
 {
@@ -39,7 +95,7 @@ a
 
 a:hover
 {
-  color: #55008d;
+  color: #383838;
   font-weight: 600;
 }
 
@@ -57,8 +113,8 @@ a:hover
   width: 22px;
   height: 22px;
   position: absolute;
-  top: -6px;
-  left: 11px;
+  top: 19px;
+  left: 25px;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -113,13 +169,14 @@ a:hover
 #menu
 {
   position: absolute;
+  min-width: 320px;
   width: 100vw;
-  height: 100vh;
+  height: 1000%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   text-align:center;
-  background: #ededed;
+  background: #f3f3f3;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -141,6 +198,11 @@ a:hover
 /* BURGER MENU END */
 
 /* HEADER START */
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 2;
+}
 .header-content {
     display: flex;
     align-self: center;
@@ -213,6 +275,7 @@ a:hover
 
 /* PROMO START */
 .promo {
+    padding-top: 93px;
     background-color: #1EA8DD;
 }
 
@@ -470,7 +533,7 @@ h2 {
 
 .photo {
     overflow: hidden;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .photo>a>img {
@@ -595,6 +658,10 @@ h4 {
 
     .header-content {
         height: 63px;
+    }
+
+    .promo{
+        padding-top: 62px;
     }
 
     .promo-content {
@@ -837,6 +904,11 @@ h4 {
         margin-top: 20px;
     }
 
+    .description>.label>a>.button:hover {
+        transform: scale(1);
+        font-size: 22px;
+    }
+
     .description>.label>a>p{
         font-weight: 400;
         font-size: 16px;
@@ -851,6 +923,13 @@ h4 {
     .description-text{
         display: none;
     }
-    
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #f3f3f3;
+    }
+
+    .dropdown-content {
+        left: 37%;
+    }
 }
 /* ADAPTIVE END */
