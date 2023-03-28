@@ -997,7 +997,7 @@ h4 {
         transition: .3s;
     }
 
-    .item>.photo>a>img {
+    .item>.photo>a>img, .item>.photo {
         width: 345px;
         height: 345px;
     }
