@@ -613,6 +613,9 @@ h4 {
     transition: all ease 1s;
 }
 
+.arrows{
+    gap: 10px;
+}
 /* SLIDER END */
 
 /* ADAPTIVE START */
