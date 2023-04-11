@@ -370,20 +370,20 @@ a>.button>p{
 /* BANNER END */
 
 /* COMPANIES START */
-.companies > .wrapper {
+.companies > .swiper-2 {
     display: none;
+    overflow: hidden;
 }
 
 .companies > .swiper {
     display: flex;
-    max-width: 266px;
+    max-width: 100%;
     width: 100%;
     height: 114px;
     margin: 0 auto;
 }
 
 .companies {
-    height: 189px;
     background-color: #F5F5F5;
     margin-bottom: 20px;
 }
@@ -761,6 +761,9 @@ h4 {
         margin-bottom: 18px;
     }
 
+    .companies > .swiper-2{
+        display: flex;
+    }
 }
 
 @media (max-width: 1024px) {

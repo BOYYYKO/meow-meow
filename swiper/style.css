@@ -8,6 +8,16 @@
     margin: 0 auto;
 }
 
+.swiper-2{
+    position: relative;
+    padding-bottom: 65px;
+    padding-top: 45px;
+}
+
+.swiper-2 > .swiper-wrapper > .swiper-slide > .item{
+    display: flex;
+    justify-content: center;
+}
 .swiper-wrapper {
     box-sizing: content-box;
 }
@@ -16,6 +26,9 @@
     display: flex;
 }
 
+.swiper-pagination{
+    top: 153px;
+}
 
 .swiper-pagination-bullet{
     background-color: transparent;
